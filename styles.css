@@ -1,87 +1,90 @@
-/* ======================================
-   Author: Todd Upshaw
-   Date: 10/23/2025
-   File: styles.css
-   Description: Styling for personal webpage
-====================================== */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Author: Todd Upshaw
+    Date: 10/23/2025
+    Filename: index.html
+    Description: Portfolio homepage featuring HTML5 table structure and CSS3 transitions.
+  -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Todd Upshaw's Webpage">
+  <meta name="keywords" content="HTML, CSS, Web Design, Portfolio">
+  <meta name="author" content="Todd Upshaw">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todd Upshaw's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-/* ----- General Page Styling ----- */
-body {
-  background: linear-gradient(to bottom right, #2b5876, #4e4376);
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
+<body>
+  <header>
+    <h1>Welcome to Todd Upshaw’s Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-/* ----- Header Section ----- */
-header {
-  text-align: center;
-  background-color: #1f1f1f;
-  padding: 20px;
-}
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m an aspiring web developer passionate about front-end design, data analytics, and creating functional user experiences.</p>
+    </section>
 
-header h1 {
-  font-size: 2.5em;
-  font-weight: bold;
-}
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Below are a few sample projects showcasing structure, design, and creativity.</p>
 
-/* ----- Navigation Menu ----- */
-nav ul {
-  list-style-type: none; /* remove bullets */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  background-color: #333;
-}
+      <!-- === Projects Table === -->
+      <table>
+        <caption>Sample Project Showcase</caption>
 
-nav ul li {
-  margin: 0 15px;
-}
+        <colgroup>
+          <col style="background-color: #2b5876;">
+          <col>
+          <col style="background-color: #4e4376;">
+        </colgroup>
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px;
-  display: inline-block;
-}
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+            <th>Image</th>
+          </tr>
+        </thead>
 
-nav ul li a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
+        <tbody>
+          <tr>
+            <td>Data Dashboard</td>
+            <td>An interactive dashboard using HTML, CSS, and JavaScript to visualize data trends.</td>
+            <td><img src="https://via.placeholder.com/100" alt="Project 1 Placeholder"></td>
+          </tr>
+          <tr>
+            <td>Portfolio Website</td>
+            <td>A responsive web portfolio showcasing web development skills and design creativity.</td>
+            <td><img src="https://via.placeholder.com/100" alt="Project 2 Placeholder"></td>
+          </tr>
+        </tbody>
 
-/* ----- Main Sections ----- */
-main {
-  padding: 20px;
-}
+        <tfoot>
+          <tr>
+            <td colspan="3">More projects coming soon!</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
 
-section {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-  color: #fff;
-}
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Get in touch at <a href="mailto:toddupshawse@gmail.com">toddupshawse@gmail.com</a>.</p>
+    </section>
+  </main>
 
-section h2 {
-  color: #ffd700;
-}
-
-section p {
-  line-height: 1.6;
-}
-
-/* ----- Footer Section ----- */
-footer {
-  text-align: center;
-  background-color: #1f1f1f;
-  color: #ccc;
-  padding: 10px;
-  font-size: 0.8em;
-}
+  <footer>
+    &copy; 2025 Todd Upshaw | All rights reserved.
+  </footer>
+</body>
+</html>
