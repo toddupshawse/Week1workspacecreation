@@ -1,90 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!--
-    Author: Todd Upshaw
-    Date: 10/23/2025
-    Filename: index.html
-    Description: Portfolio homepage featuring HTML5 table structure and CSS3 transitions.
-  -->
-  <meta charset="UTF-8">
-  <meta name="description" content="Todd Upshaw's Webpage">
-  <meta name="keywords" content="HTML, CSS, Web Design, Portfolio">
-  <meta name="author" content="Todd Upshaw">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todd Upshaw's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+/*
+  Author: Todd Upshaw
+  Date: 10/23/2025
+  Filename: styles.css
+  Description: CSS styling for Todd Upshaw’s Portfolio with transitions and table enhancements.
+*/
 
-<body>
-  <header>
-    <h1>Welcome to Todd Upshaw’s Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+/* === GENERAL STYLING === */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I’m an aspiring web developer passionate about front-end design, data analytics, and creating functional user experiences.</p>
-    </section>
+header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+}
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Below are a few sample projects showcasing structure, design, and creativity.</p>
+header h1 {
+  margin: 0;
+  color: #fff;
+}
 
-      <!-- === Projects Table === -->
-      <table>
-        <caption>Sample Project Showcase</caption>
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
 
-        <colgroup>
-          <col style="background-color: #2b5876;">
-          <col>
-          <col style="background-color: #4e4376;">
-        </colgroup>
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
 
-        <thead>
-          <tr>
-            <th>Project Name</th>
-            <th>Description</th>
-            <th>Image</th>
-          </tr>
-        </thead>
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-        <tbody>
-          <tr>
-            <td>Data Dashboard</td>
-            <td>An interactive dashboard using HTML, CSS, and JavaScript to visualize data trends.</td>
-            <td><img src="https://via.placeholder.com/100" alt="Project 1 Placeholder"></td>
-          </tr>
-          <tr>
-            <td>Portfolio Website</td>
-            <td>A responsive web portfolio showcasing web development skills and design creativity.</td>
-            <td><img src="https://via.placeholder.com/100" alt="Project 2 Placeholder"></td>
-          </tr>
-        </tbody>
+/* === NAVIGATION HOVER EFFECT === */
+nav ul li a:hover {
+  background-color: #555;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
 
-        <tfoot>
-          <tr>
-            <td colspan="3">More projects coming soon!</td>
-          </tr>
-        </tfoot>
-      </table>
-    </section>
+/* === MAIN SECTIONS === */
+main {
+  padding: 20px;
+}
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Get in touch at <a href="mailto:toddupshawse@gmail.com">toddupshawse@gmail.com</a>.</p>
-    </section>
-  </main>
+section {
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
 
-  <footer>
-    &copy; 2025 Todd Upshaw | All rights reserved.
-  </footer>
-</body>
-</html>
+/* === SECTION HOVER ZOOM === */
+section:hover {
+  transform: scale(1.02);
+}
+
+/* === TABLE STYLING === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: #fff;
+}
+
+caption {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #2b2b2b;
+  padding: 10px;
+  border: 1px solid #555;
+}
+
+tbody td {
+  border: 1px solid #777;
+  padding: 10px;
+  text-align: left;
+}
+
+tfoot td {
+  background-color: #2b2b2b;
+  text-align: center;
+  padding: 10px;
+  border-top: 2px solid #555;
+}
+
+table img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #bbb;
+}
