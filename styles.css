@@ -1,0 +1,87 @@
+/* ======================================
+   Author: Todd Upshaw
+   Date: 10/23/2025
+   File: styles.css
+   Description: Styling for personal webpage
+====================================== */
+
+/* ----- General Page Styling ----- */
+body {
+  background: linear-gradient(to bottom right, #2b5876, #4e4376);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----- Header Section ----- */
+header {
+  text-align: center;
+  background-color: #1f1f1f;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+/* ----- Navigation Menu ----- */
+nav ul {
+  list-style-type: none; /* remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* ----- Main Sections ----- */
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  color: #fff;
+}
+
+section h2 {
+  color: #ffd700;
+}
+
+section p {
+  line-height: 1.6;
+}
+
+/* ----- Footer Section ----- */
+footer {
+  text-align: center;
+  background-color: #1f1f1f;
+  color: #ccc;
+  padding: 10px;
+  font-size: 0.8em;
+}
