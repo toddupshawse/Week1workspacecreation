@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Author: Todd Upshaw
+    Date: 10/23/2025
+    Filename: storefront.html
+    Description: Midterm Performance Assessment — Simple storefront webpage using semantic HTML5 and CSS3.
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todd Upshaw's Storefront</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- === HEADER SECTION === -->
+  <header>
+    <h1>Student ID: 123456789 | Desert Eagle Supply Co.</h1>
+  </header>
+
+  <!-- === NAVIGATION BAR === -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- === MAIN CONTENT === -->
+  <main>
+    <section id="products">
+      <h2>Our Featured Products</h2>
+      <p>Explore our latest collection of quality goods built for performance and style.</p>
+
+      <!-- === PRODUCT TABLE === -->
+      <table>
+        <caption>Store Inventory</caption>
+
+        <colgroup>
+          <col style="background-color: #f9f9f9;">
+          <col>
+          <col style="background-color: #f9f9f9;">
+          <col>
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Availability</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Desert Eagle Hoodie</td>
+            <td>$49.99</td>
+            <td>Apparel</td>
+            <td>In Stock</td>
+          </tr>
+          <tr>
+            <td>Grind Mode Snapback</td>
+            <td>$29.99</td>
+            <td>Accessories</td>
+            <td>Low Stock</td>
+          </tr>
+          <tr>
+            <td>Limited Edition Vinyl</td>
+            <td>$39.99</td>
+            <td>Music</td>
+            <td>Pre-Order</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="4"><em>All prices subject to change. More products coming soon.</em></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+
+  <!-- === FOOTER === -->
+  <footer>
+    &copy; 2025 Desert Eagle Supply Co. | All rights reserved.
+  </footer>
+</body>
+</html>
