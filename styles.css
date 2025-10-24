@@ -2,71 +2,65 @@
   Author: Todd Upshaw
   Date: 10/23/2025
   Filename: styles.css
-  Description: CSS styling for Todd Upshaw’s Portfolio with transitions and table enhancements.
+  Description: Styling for the Midterm Performance Assessment storefront page.
 */
 
-/* === GENERAL STYLING === */
+/* === GENERAL PAGE SETTINGS === */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
 }
 
+/* === HEADER === */
 header {
-  background-color: #1f1f1f;
-  padding: 20px;
+  background-color: #333;
+  color: white;
   text-align: center;
+  padding: 20px;
 }
 
-header h1 {
-  margin: 0;
-  color: #fff;
-}
-
+/* === NAVIGATION MENU === */
 nav ul {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
   padding: 0;
-  margin-top: 10px;
+  margin: 0;
+  background-color: #333;
 }
 
-nav ul li {
-  display: inline;
+nav li {
   margin: 0 15px;
 }
 
-nav ul li a {
-  color: #fff;
+nav a {
+  color: white;
+  background-color: #333;
+  padding: 12px 20px;
   text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-/* === NAVIGATION HOVER EFFECT === */
-nav ul li a:hover {
+nav a:hover {
   background-color: #555;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transform: scale(1.1);
 }
 
-/* === MAIN SECTIONS === */
+/* === MAIN CONTENT AREA === */
 main {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 20px;
 }
 
 section {
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-/* === SECTION HOVER ZOOM === */
-section:hover {
-  transform: scale(1.02);
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* === TABLE STYLING === */
@@ -74,46 +68,41 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  color: #fff;
 }
 
 caption {
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 10px;
   text-align: left;
 }
 
 thead th {
-  background-color: #2b2b2b;
-  padding: 10px;
-  border: 1px solid #555;
+  background-color: #444;
+  color: white;
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
 
 tbody td {
-  border: 1px solid #777;
-  padding: 10px;
+  border: 1px solid #ccc;
+  padding: 12px;
   text-align: left;
 }
 
 tfoot td {
-  background-color: #2b2b2b;
+  border-top: 2px solid #ccc;
   text-align: center;
-  padding: 10px;
-  border-top: 2px solid #555;
-}
-
-table img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 5px;
+  font-style: italic;
+  padding: 12px;
 }
 
 /* === FOOTER === */
 footer {
-  background-color: #1f1f1f;
+  background-color: #333;
+  color: white;
   text-align: center;
   padding: 15px;
   font-size: 0.9em;
-  color: #bbb;
 }
