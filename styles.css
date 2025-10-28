@@ -1,108 +1,178 @@
-/*
-  Author: Todd Upshaw
-  Date: 10/23/2025
-  Filename: styles.css
-  Description: Styling for the Midterm Performance Assessment storefront page.
-*/
-
-/* === GENERAL PAGE SETTINGS === */
+/* =====================
+   General Page Styles
+===================== */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #f5f5f5;
 }
 
-/* === HEADER === */
 header {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    background-color: #111;
+    padding: 1em 0;
+    text-align: center;
 }
 
-/* === NAVIGATION MENU === */
+h1, h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* =====================
+   Navigation Styling
+===================== */
 nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  background-color: #333;
-}
-
-nav li {
-  margin: 0 15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
 }
 
 nav a {
-  color: white;
-  background-color: #333;
-  padding: 12px 20px;
-  text-decoration: none;
-  display: block;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+    color: ivory;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #555;
+    color: #ffd700;
 }
 
-/* === MAIN CONTENT AREA === */
-main {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+/* =====================
+   Main Content Layout
+===================== */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+    max-width: 1000px;
+    margin: auto;
 }
 
 section {
-  background-color: #ffffff;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    padding: 1.5em;
+    border-radius: 12px;
 }
 
-/* === TABLE STYLING === */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+/* =====================
+   Contact Form Styling
+===================== */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
 }
 
-caption {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align: left;
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
 
-thead th {
-  background-color: #444;
-  color: white;
-  padding: 12px;
-  border: 1px solid #ccc;
-  text-align: left;
+label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #ccc;
 }
 
-tbody td {
-  border: 1px solid #ccc;
-  padding: 12px;
-  text-align: left;
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 0.8em;
+    border: 2px solid #555;
+    border-radius: 8px;
+    background-color: #444;
+    color: #fff;
+    transition: border-color 0.3s ease;
 }
 
-tfoot td {
-  border-top: 2px solid #ccc;
-  text-align: center;
-  font-style: italic;
-  padding: 12px;
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #00bfff;
+    outline: none;
 }
 
-/* === FOOTER === */
+/* =====================
+   Submit Button
+===================== */
+.submit-btn {
+    background-color: #00bfff;
+    color: #fff;
+    padding: 0.8em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #008fcc;
+}
+
+/* =====================
+   Footer
+===================== */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
+    background-color: #111;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    color: #aaa;
 }
+
+/* =====================
+   Responsive Design
+===================== */
+
+/* Phones */
+@media (max-width: 600px) {
+    .main-container {
+        padding: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    section {
+        padding: 1em;
+    }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+    .main-container {
+        padding: 1.5em;
+    }
+
+    .contact-form {
+        gap: 1em;
+    }
+}
+
+/* Desktops */
+@media (min-width: 901px) {
+    .main-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section {
+        flex: 1 1 45%;
+    }
+
+    #contact {
+        flex: 1 1 100%;
+    }
+}
+
