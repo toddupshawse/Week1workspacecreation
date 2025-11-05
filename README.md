@@ -23,3 +23,8 @@ This project showcases my ability to:
 ---
 
 ## 📁 Repository Structure
+## Local Hosting Screenshot
+
+Below is a screenshot of my website hosted locally using XAMPP:
+
+![Localhost Screenshot](capnew.png)
