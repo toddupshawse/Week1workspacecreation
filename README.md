@@ -69,5 +69,5 @@ Access the live site here: [Insert your GitHub Pages URL]
 ---
 
 ## 🔗 References
-- GitHub Pages Documentation: [https://docs.github.com/en/pages](https://docs.github.com/en/pages)  
+- GitHub Pages Documentation: https://toddupshawse.github.io/workspacecreation/
 - XAMPP Documentation: [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html)
