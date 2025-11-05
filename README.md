@@ -23,8 +23,51 @@ This project showcases my ability to:
 ---
 
 ## 📁 Repository Structure
-## Local Hosting Screenshot
+- `/blog.html`
+- `/styles.css`
+- `/capnew.PNG`
+- `/other project assets (images, videos, etc.)`
 
-Below is a screenshot of my website hosted locally using XAMPP:
+---
 
-![Localhost Screenshot](capnew.png)
+## 💻 Local Hosting Screenshot
+Below is a screenshot of my website hosted locally using **XAMPP**. The timestamp and URL are visible:
+
+![Localhost Screenshot](capnew.PNG)
+
+---
+
+## 🚀 Deployment
+The project has been deployed via **GitHub Pages**.  
+Access the live site here: [Insert your GitHub Pages URL]
+
+---
+
+## ⚡ Features
+- **Responsive Layout**: Blog articles stack vertically on small screens and side-by-side on larger screens.  
+- **Flexbox Layout**: Ensures clean spacing and alignment of all content.  
+- **Media Queries**: Optimized breakpoints for phones (≤767px), tablets (768px–1024px), and desktops (≥1025px).  
+- **CSS Animations**: Smooth fade-in effects and hover transitions for links and form elements.  
+- **Contact Form**: Includes Name, Email, Subject, and Message fields, with required validation for Name, Email, and Message.
+
+---
+
+## 🛠 Tools Used
+- **HTML5 & CSS3**
+- **Flexbox & Media Queries**
+- **XAMPP** for local hosting
+- **GitHub Pages** for live deployment
+
+---
+
+## 📌 Notes
+- All sections are semantically structured for accessibility.  
+- The website scales seamlessly across devices.  
+- Animations and transitions enhance user experience and interactivity.  
+- Screenshot and GitHub Pages link confirm both local and live hosting.
+
+---
+
+## 🔗 References
+- GitHub Pages Documentation: [https://docs.github.com/en/pages](https://docs.github.com/en/pages)  
+- XAMPP Documentation: [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html)
